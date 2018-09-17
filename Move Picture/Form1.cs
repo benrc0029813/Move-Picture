@@ -19,7 +19,7 @@ namespace Move_Picture
         //moves the picutre right
         private void button1_Click(object sender, EventArgs e)
         {
-            if(pictureBox1.Location.X + 50 < ClientRectangle.Width - pictureBox1.Width)
+            if (pictureBox1.Location.X + 50 < ClientRectangle.Width - pictureBox1.Width)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X + 50, pictureBox1.Location.Y);
             }
@@ -43,10 +43,11 @@ namespace Move_Picture
         //moves the picutre down
         private void button4_Click(object sender, EventArgs e)
         {
-            if (pictureBox1.Location.Y+50<ClientRectangle.Height-pictureBox1.Height)
+            if (pictureBox1.Location.Y + 50 < ClientRectangle.Height - pictureBox1.Height)
             {
                 pictureBox1.Location = new Point(pictureBox1.Location.X, pictureBox1.Location.Y + 50);
             }
         }
+        
     }
 }
