@@ -49,7 +49,7 @@
             // pictureBox1
             // 
             this.pictureBox1.Image = global::Move_Picture.Properties.Resources.gold_star;
-            this.pictureBox1.Location = new System.Drawing.Point(29, 24);
+            this.pictureBox1.Location = new System.Drawing.Point(388, 195);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(79, 72);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
