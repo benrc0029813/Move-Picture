@@ -59,18 +59,21 @@ namespace Move_Picture
 
         private async void button6_Click(object sender, EventArgs e)
         {
+            int d;
             try
             {
-                for (int i = 0; i < 10; i++)
-                {
-                    pictureBox1.Location = new Point(pictureBox1.Location.X + 5, pictureBox1.Location.Y);
-                    await Task.Delay(Convert.ToInt32(textBox1.Text));
-                }
+                d = Convert.ToInt32(textBox1.Text);  
             }
             catch
             {
                 MessageBox.Show("Don't be a Idiot type in a number");
+                d = 10;
             }
+            for (int i = 0; i < 10; i++)
+                {
+                    pictureBox1.Location = new Point(pictureBox1.Location.X + 10, pictureBox1.Location.Y);
+                    await Task.Delay(d);
+                }
         }
     }
 }
