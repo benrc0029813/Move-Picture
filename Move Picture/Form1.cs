@@ -12,9 +12,15 @@ namespace Move_Picture
 {
     public partial class Form1 : Form
     {
+
+        private Image Sun;
+        private Image Moon;
+
         public Form1()
         {
             InitializeComponent();
+            Sun = Properties.Resources.Sun;
+            Moon = Properties.Resources.Moon;
         }
         //moves the picutre right
         private void button1_Click(object sender, EventArgs e)
@@ -75,5 +81,23 @@ namespace Move_Picture
                     await Task.Delay(d);
                 }
         }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            if (pictureBox2.Image==Sun)
+            {
+                pictureBox2.Image = Moon;
+            }
+            else
+            {
+                pictureBox2.Image = Sun;
+            }
+        }
+
     }
 }
